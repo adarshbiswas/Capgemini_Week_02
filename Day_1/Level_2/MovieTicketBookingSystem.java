@@ -6,18 +6,18 @@
 import java.util.Scanner;
 
 // Create a MovieTicket class with attributes movieName, seatNumber, and price
-class MovieTicket{
+class MovieTicket {
 
-//  set attributes
+    // set attributes
     private String movieName;
     private int seatNumber = -1;
     private double price = 0.0;
 
-//    Create a constructor
-    MovieTicket(String movieName){
+    // Create a constructor
+    MovieTicket(String movieName) {
         this.movieName = movieName;
-           // Default value
-         }
+        // Default value
+    }
 
     // Getters for attributes (optional, if needed elsewhere)
     public String getMovieName() {
@@ -39,7 +39,7 @@ class MovieTicket{
         System.out.println("\nTicket booked successfully!");
     }
 
-    void getTicketDetails(){
+    void getTicketDetails() {
         if (seatNumber == -1) {
             System.out.println("\nNo ticket booked yet.");
         } else {
@@ -78,7 +78,6 @@ public class MovieTicketBookingSystem {
         ticket.getTicketDetails();
 
         in.close();
-
 
     }
 }

@@ -97,7 +97,8 @@ class ShoppingCart {
         }
         System.out.println("=== Shopping Cart ===");
         for (CartItem item : cartItems) {
-            System.out.println(item.getItemName() + " - $" + item.getPrice() + " x " + item.getQuantity() + " = $" + item.getTotalCost());
+            System.out.println(item.getItemName() + " - $" + item.getPrice() + " x " + item.getQuantity() + " = $"
+                    + item.getTotalCost());
         }
         System.out.println("=====================");
     }
