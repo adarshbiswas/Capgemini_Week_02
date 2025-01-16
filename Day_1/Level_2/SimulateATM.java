@@ -20,6 +20,20 @@ class BankAccount {
         this.accountNumber = accountNumber;
     }
 
+    // Getters
+
+    public String getBankAccount() {
+        return bankAccount;
+    }
+
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+
+    public long getAccountNumber() {
+        return accountNumber;
+    }
+
     // Create method to deposit money
     void depositMoney(int money) {
         if (money <= 0) {
